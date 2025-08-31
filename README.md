@@ -1,2 +1,337 @@
 # machine-learning-projects
 Collection of machine learning projects and algorithms, including classical models and deep learning models
+
+
+
+## Project 1: Building an Industrial-Scale E-commerce Recommendation System from Scratch
+
+
+
+
+
+## Project 2: Personalized Recommendation System for  Advertising
+
+
+
+
+
+## Project 3: Language Models for Music Generation 🎶
+
+
+
+**Description**: This project explores **sequence modeling with Recurrent Neural Networks (RNNs)** for **music generation**.  A character-based RNN was trained on symbolic music sequences to generate new compositions.
+
+The project code demonstrates:
+
+- Preparing and preprocessing music sequence data.  
+- Building an RNN with Keras/TensorFlow to model sequential dependencies.  
+- Training the RNN to generate new symbolic music.  
+- Sampling and interpreting generated sequences.
+
+
+
+**Skill sets involved in the project:**
+
+- **Deep Learning for Sequences**: Implemented an RNN for generative modeling.  
+- **Data Preprocessing**: Encoded symbolic music as sequences for training.  
+- **Model Training**: Tuned hyperparameters, monitored loss, and improved sequence generation quality.  
+- **Generative AI**: Demonstrated sequence generation from learned distributions.  
+- **Frameworks**: Python, TensorFlow/Keras, NumPy, Matplotlib.  
+
+
+
+**Example Result:**
+
+The model generates short symbolic sequences that resemble simple music patterns.  
+Future work could extend this to LSTM/GRU architectures, or generate MIDI for richer compositions.
+
+
+
+## Project 4: Image Classification on CIFAR-10 with a Convolutional Neural Network (CNN) from Scratch
+
+**Description**:This project implements a **Convolutional Neural Network (CNN)** in **PyTorch**, trained and tested on  image classification datasets. The goal was to build a CNN from the ground up and understand  how each layer contributes to feature extraction and classification.
+
+
+
+- Built a CNN architecture from scratch in PyTorch.  
+- Trained the model on image datasets (e.g., MNIST / CIFAR-10).  
+- Monitored training and validation accuracy across epochs.  
+- Visualized loss curves and sample predictions.  
+
+
+
+**Skill Sets:**
+
+- **Deep Learning Fundamentals**: CNN architecture (Conv, Pooling, Fully Connected layers).  
+- **PyTorch Implementation**: Defined custom layers, training loops, optimizers.  
+- **Regularization**: Applied dropout and weight decay to reduce overfitting.  
+- **Evaluation**: Accuracy, confusion matrix, misclassified samples.  
+- **Visualization**: Training/validation curves, feature maps.  
+- **Tools & Libraries**: Python, PyTorch, NumPy, Matplotlib, Seaborn.  
+
+
+
+Example Results
+
+- Achieved high accuracy on MNIST / CIFAR-10 classification task.  
+- Training curves showed smooth convergence with minimal overfitting.  
+- Visualized CNN feature maps revealed hierarchical pattern learning.
+
+
+
+
+
+## **Project 5 with detailed report: Data Pre-processing and Non-Parametric Classification Algorithms**
+
+**Description**: Implemented data preprocessing, feature engineering, and classification algorithms (KNN, Decision Trees, Random Forests) on Wine Quality and Abalone datasets, with comparative evaluation and visualization of results.
+
+
+
+**Skill sets involved in the project** :
+
+
+
+- **Data Preprocessing**: handled missing values, detected outliers, applied normalization (Z-score, MinMax), and balanced imbalanced datasets using SMOTE.
+- **Feature Engineering**: statistical analysis (mean, variance, skewness, kurtosis), feature selection, and categorical encoding (one-hot vs. label encoding).
+- **Machine Learning Algorithms**: implemented and tuned **K-Nearest Neighbors (KNN)**, **Decision Trees**, and **Random Forests** using scikit-learn.
+- **Model Evaluation**: performed 5-fold cross-validation, hyperparameter tuning with GridSearchCV, and compared accuracy across models/datasets.
+- **Visualization & Reporting**: created pair plots, accuracy-vs-parameter plots, heatmaps, and summary tables to present experimental results clearly.
+- **Tools & Libraries**: Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, Seaborn, scikit-learn.
+
+Code in 
+
+report in
+
+
+
+## **Project 6 with detailed report: Representation Learning and Regression Models**
+
+
+
+**Description**: Applied dimensionality reduction techniques (t-SNE, PCA, Isomap) and regression algorithms (KNN Regressor, Random Forest Regressor, Gradient Boosting Regressor) on Forest Fires, Wine Quality, and Abalone datasets, with comparative evaluation of RMSE performance and visualization of feature representations.
+
+
+
+**Skill sets involved in the project**:
+
+
+
+- **Feature Engineering**: one-hot encoding of categorical features, sparse element binning, feature removal (e.g., low variance or outlier-dominated features), and Z-score normalization.
+- **Representation Learning**: implemented **t-SNE** for visualization, **PCA** for linear dimensionality reduction, and **Isomap** for non-linear manifold learning.
+- **Regression Algorithms**: trained and tuned **KNN Regressor**, **Random Forest Regressor**, and **Gradient Boosting Regressor** using scikit-learn.
+- **Model Evaluation**: performed 5-fold cross-validation, hyperparameter tuning with GridSearchCV, and compared RMSE across datasets and feature spaces.
+- **Visualization & Reporting**: created t-SNE and Isomap 2D plots, PCA scree plots, RMSE vs. number of components graphs, and comparative tables to summarize best results.
+- **Tools & Libraries**: Python, Jupyter Notebook, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn.
+
+
+
+
+
+## **Project 7 with detailed report: Clustering and Classification with Deep Learning on “FashionMNIST with a Twist!”**
+
+
+
+**Description**: Built and evaluated multiple deep learning models on the **Fashion MNIST dataset**, exploring optimization strategies, deeper architectures, convolutional layers, dropout, residual connections, and data augmentation. The best model achieved **98.63% test accuracy**, with additional analysis on feature representations through clustering and visualization.
+
+
+
+**Skill sets involved in the project**:
+
+
+
+- **Data Preprocessing**: normalized pixel values (0–255 → 0–1), created training/validation/test splits, and ensured balanced datasets.
+
+- **Model Development**: implemented and trained with **GPU** a series of deep learning architectures including:
+
+	
+
+	- Base fully connected model
+	- Optimized model with Adam optimizer & early stopping
+	- Deeper fully connected network (pyramid-like structure)
+	- CNNs with additional convolution/pooling layers
+	- Dropout-regularized CNNs to mitigate overfitting
+	- Residual network block experiments
+	- Classical CNNs (GoogleNet, ResNet) for comparison
+
+	
+
+- **Regularization & Optimization**: applied dropout, early stopping, and experimented with L1/L2 regularization.
+
+- **Data Augmentation**: tested rotation, shift, and zoom transformations to enhance model robustness.
+
+- **Clustering & Representation Learning**: extracted latent features from the best CNN, applied **KMeans** and **DBSCAN**, and visualized feature spaces with PCA and t-SNE to reveal meaningful subcategories.
+
+- **Model Evaluation**: compared models using accuracy, loss curves, runtime performance, and cluster interpretability.
+
+- **Tools & Libraries**: Python, Jupyter Notebook, NumPy, Pandas, TensorFlow/Keras, Matplotlib, Seaborn, scikit-learn.
+
+
+
+
+
+
+
+## Project 8: Variational Autoencoder (VAE) for Anime Face Generation
+
+This project implements a **Variational Autoencoder (VAE)** using **PyTorch**.  The VAE is trained on image data to learn compressed latent representations and generate new samples, demonstrating the power of **deep generative models**.
+
+Description
+
+- Implemented the encoder and decoder networks with reparameterization trick.  
+- Used latent variable sampling to generate realistic outputs.  
+- Trained the model on dataset (e.g., MNIST / Fashion-MNIST) for unsupervised representation learning.  
+- Visualized reconstructed images and samples drawn from the latent space.  
+
+Skill Sets
+
+- **Deep Generative Models**: Variational Autoencoder (VAE) with reparameterization trick.  
+- **Unsupervised Learning**: Latent feature extraction and reconstruction.  
+- **Neural Network Implementation**: Encoder, decoder, and loss function (reconstruction + KL divergence).  
+- **PyTorch**: Custom training loops, optimizers, loss monitoring.  
+- **Visualization**: Original vs reconstructed images, latent space sampling.  
+
+Example Results
+
+- Achieved high-quality reconstructions on MNIST/Fashion-MNIST.  
+- Latent space visualization shows meaningful clustering of digit/image classes.  
+- Generated new synthetic samples from the learned distribution.
+
+
+
+## Project 9: Multi-Armed Bandit with Q-Learning
+
+**Description**: This project explores **Reinforcement Learning (RL)** through the **multi-armed bandit problem**,  implemented with **Q-learning** in Python.  The goal is to balance **exploration vs exploitation** while maximizing cumulative reward.
+
+
+
+- Implemented the **multi-armed bandit environment** with different arms and reward distributions.  
+- Applied **Q-learning** to estimate action values and improve decision making over time.  
+- Compared different exploration strategies (ε-greedy, softmax, etc.).  
+- Visualized reward curves and convergence of action-value estimates.  
+
+
+
+Skill Sets
+
+- **Reinforcement Learning Fundamentals**: Exploration-exploitation tradeoff, reward maximization.  
+- **Q-Learning Implementation**: Update rules, learning rate tuning, convergence behavior.  
+- **Experimentation**: Tested ε-greedy vs other exploration strategies.  
+- **Visualization**: Plotted average reward per timestep and action-value convergence.  
+- **Tools & Libraries**: Python, NumPy, Matplotlib, Jupyter Notebook.  
+
+
+
+Example Results
+
+- Q-learning converges to optimal arm selection with sufficient exploration.  
+- ε-greedy policy balances exploration vs exploitation effectively.  
+- Reward curves demonstrate performance differences between exploration strategies.
+
+
+
+## Project 10: Movie Rating Prediction
+
+
+
+
+
+## Project 11: Stock Prediction with RNN
+
+This project applies **Recurrent Neural Networks (RNNs)** to forecast stock prices from historical time-series data.  The model captures sequential dependencies in daily price movements to predict future stock trends. Build and train an RNN-based model to predict future stock prices using historical data (open, high, low, close, volume).
+
+**Approach:**
+
+- **Data Preprocessing**:  
+  - Collected stock price data (daily OHLCV).  
+  - Applied normalization for numerical stability.  
+  - Created sliding windows for time-series sequences.  
+- **Modeling**:  
+  - Implemented RNN (and optionally LSTM/GRU for comparison).  
+  - Trained the network to minimize prediction error (MSE/MAE).  
+- **Evaluation**:  
+  - Compared predicted vs actual stock prices.  
+  - Reported RMSE/MAE performance on test data.  
+- **Visualization**:  
+  - Training loss curves.  
+  - Predicted vs actual price comparison.  
+
+
+
+**Skill Sets:**
+
+- **Time-Series Forecasting**: Sequence windowing, lag features.  
+- **Deep Learning**: RNN/LSTM/GRU for sequential data.  
+- **Data Engineering**: Normalization, train/test split for time-series.  
+- **Model Evaluation**: RMSE, MAE, and trend alignment analysis.  
+- **Tools & Libraries**: Python, TensorFlow/Keras (or PyTorch), Pandas, NumPy, Matplotlib, Seaborn.  
+
+
+
+**Example Results**
+
+- The RNN successfully learned short-term stock price patterns.  
+- LSTM/GRU models showed improved stability and lower RMSE compared to vanilla RNN.  
+- Predictions followed the general trend of stock prices, with stronger performance in short-term horizons.  
+
+
+
+## Project 12: Graph Convolutional Network (GCN) on Dolphins Social Network 🐬
+
+This project applies a **Graph Convolutional Network (GCN)** to the famous **Dolphins social network dataset**,  which captures associations between 62 dolphins in Doubtful Sound, New Zealand.
+
+**Objective**
+
+- Learn low-dimensional embeddings for dolphins (nodes) using GCN.  
+- Visualize community structures and compare with traditional methods.  
+- Demonstrate the power of GCNs on small social networks.
+
+**Dataset**
+
+- **Nodes**: 62 dolphins (individual animals).  
+- **Edges**: Social interactions (association in groups).  
+- **Reference**: Lusseau, D. (2003). *The emergent properties of a dolphin social network*. Proc. R. Soc. Lond. B.
+
+**Approach**
+
+- Built the graph with NetworkX / PyTorch Geometric.  
+- Implemented a 2-layer GCN to aggregate neighbor information.  
+- Trained embeddings for unsupervised visualization / community separation.  
+- Compared GCN embeddings with Node2Vec and DeepWalk baselines.  
+
+**Results**
+
+- GCN embeddings separated dolphins into two clear communities.  
+- Visualization showed distinct clusters corresponding to observed subgroups.  
+- Demonstrated that GCN captures both structure and features (when available).  
+
+**Skill Sets**
+
+- Graph Neural Networks (GNNs), GCN architecture.  
+- Graph representation learning (embeddings).  
+- Unsupervised learning and visualization (PCA, t-SNE).  
+- Tools: Python, PyTorch (or PyTorch Geometric / DGL), NetworkX, scikit-learn, Matplotlib.
+
+
+
+# Kaggle Machine Learning Competition – ECE657: Stroke Risk Prediction
+
+This project contains my submission for the **ECE657 Kaggle competition**. The goal was to build and optimize machine learning models for predictive accuracy on the provided dataset.
+
+## Description
+- Explored and cleaned the dataset (missing values, normalization, encoding).  
+- Engineered new features to improve model performance.  
+- Implemented and compared multiple models (e.g., Logistic Regression, Random Forest, Gradient Boosting, Neural Networks).  
+- Tuned hyperparameters using cross-validation and grid/random search.  
+- Submitted predictions to Kaggle and evaluated leaderboard performance.  
+
+## Skill Sets
+- **Data Preprocessing**: Handling missing data, categorical encoding, feature scaling.  
+- **Feature Engineering**: Created derived features to improve model accuracy.  
+- **Modeling**: Implemented ML algorithms with scikit-learn / XGBoost / PyTorch.  
+- **Model Selection**: Cross-validation, hyperparameter tuning, and ensemble methods.  
+- **Competition Workflow**: Prepared final predictions for Kaggle submission.  
+- **Tools & Libraries**: Python, Pandas, NumPy, scikit-learn, XGBoost, Matplotlib, Seaborn.  
+
+## Results
+- Achieved strong performance on the Kaggle leaderboard.  
+- Demonstrated end-to-end ML pipeline: data → features → model → submission.
