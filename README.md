@@ -1,22 +1,73 @@
 # machine-learning-projects
-Collection of machine learning projects and algorithms, including classical models and deep learning models
+Collection of my machine learning projects and algorithms, covering both classical methods and modern deep learning approaches.  
 
+⚠️ Note: Projects from my full-time professional work experience are **not included here** due to confidentiality.  
+
+**Highlights**: Projects span **recommendation systems, natural language processing (NLP), computer vision (CV), reinforcement learning (RL), and graph neural networks (GNNs)**, demonstrating a broad skill set across applied machine learning domains.
 
 
 ## Project 1: Building an Industrial-Scale E-commerce Recommendation System from Scratch
+code in: [e-commerce-rec-sys-from-scratch/code](./e-commerce-rec-sys-from-scratch/code)
+
+**Introduction**  
+Designed and implemented the end-to-end recommendation workflow for a newly launched e-commerce platform, supporting product discovery and personalization at scale.
+
+**System Design**  
+- **Data Layer**: Integrated product catalog (~330K items) and user activity logs (clicks, exposures) into a centralized data warehouse.  
+- **Processing Layer**:  
+  - Offline: Built item profiles & user profiles, content-based similarity, collaborative filtering, CTR/conversion prediction models.  
+  - Online: Real-time user behavior analysis for cold-start and session-based recommendations.  
+- **Recommendation Layer**:  
+  - Early stage: Item cold start handled via content-based similarity; user cold start mitigated by real-time behavioral signals and popular/new item strategies.  
+  - Later stage: Shifted to hybrid offline + online recommendation using large-scale behavior logs for personalization.  
+
+**Tech Stack**  
+- **Data Infrastructure**: Hadoop (HDFS), Kafka, Spark  
+- **Modeling**: Collaborative Filtering, Content-based filtering, CTR prediction (Logistic Regression, Tree-based models)  
+- **Engineering**: Python, SQL, PySpark, Scikit-learn  
+- **Serving**: Real-time recommendation service with log streaming + offline batch updates  
+
+**Impact**  
+Established a scalable recommendation foundation that evolved from cold-start strategies to personalized ranking, improving product discovery and user engagement.
 
 
 
+## Project 2: Personalized Recommendation for Advertising
+code in: [Personalized-Ad-RecSys](./Personalized-Ad-RecSys)
 
+**Introduction**  
+Built an end-to-end **advertising recommendation system** based on JD.com CTR prediction dataset (26M ad impression logs, 1M users, 800K ads).  
+The system integrates **offline recall, CTR prediction, and real-time recommendation** to deliver personalized ads.
 
-## Project 2: Personalized Recommendation System for  Advertising
+**System Design**  
+- **Data Layer**: Integrated user profiles, ad features, behavior logs (~700M records) into HDFS.  
+- **Processing Layer**:  
+  - **Offline**: 
+    - Trained ALS collaborative filtering model for user–category preferences.  
+    - Built CTR prediction models with Logistic Regression.  
+    - Cached recall sets (~500 items/user) and features in Redis.  
+  - **Real-time**:  
+    - Collected user logs via Kafka.  
+    - Updated user features and recall sets dynamically.  
+    - Combined with CTR model for real-time top-N recommendation.  
+- **Recommendation Layer**:  
+  - Solved **cold start** with profile-based recall and hot/new ads.  
+  - Provided **personalized CTR-based ranking** for relevance.  
 
+**Tech Stack**  
+- Data Infrastructure: **HDFS, Kafka, Flume**  
+- Data Processing: **Spark SQL, Spark ML**  
+- Models: **ALS Collaborative Filtering, Logistic Regression for CTR**  
+- Serving & Caching: **Redis**  
+- Programming: **Python, Scala**  
 
-
+**Results**  
+- Established a scalable pipeline from log collection → offline/online processing → ad recommendation.  
+- Demonstrated improvement in ad CTR prediction and personalized targeting compared to non-personalized baselines.
 
 
 ## Project 3: Language Models for Music Generation 🎶
-
+code in: [RNN_Music_Generation.ipynb](./RNN_Music_Generation.ipynb)
 
 
 **Description**: This project explores **sequence modeling with Recurrent Neural Networks (RNNs)** for **music generation**.  A character-based RNN was trained on symbolic music sequences to generate new compositions.
@@ -48,6 +99,7 @@ Future work could extend this to LSTM/GRU architectures, or generate MIDI for ri
 
 
 ## Project 4: Image Classification on CIFAR-10 with a Convolutional Neural Network (CNN) from Scratch
+code in: [CNN-scratch-pytorch.ipynb](./CNN-scratch-pytorch.ipynb)
 
 **Description**:This project implements a **Convolutional Neural Network (CNN)** in **PyTorch**, trained and tested on  image classification datasets. The goal was to build a CNN from the ground up and understand  how each layer contributes to feature extraction and classification.
 
@@ -82,6 +134,8 @@ Example Results
 
 
 ## **Project 5 with detailed report: Data Pre-processing and Non-Parametric Classification Algorithms**
+code in: [ECE657A-projects/A1](./ECE657A-projects/A1)
+report: [a1-submitted.pdf](./ECE657A-projects/A1/a1-submitted.pdf)
 
 **Description**: Implemented data preprocessing, feature engineering, and classification algorithms (KNN, Decision Trees, Random Forests) on Wine Quality and Abalone datasets, with comparative evaluation and visualization of results.
 
@@ -98,15 +152,12 @@ Example Results
 - **Visualization & Reporting**: created pair plots, accuracy-vs-parameter plots, heatmaps, and summary tables to present experimental results clearly.
 - **Tools & Libraries**: Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, Seaborn, scikit-learn.
 
-Code in 
-
-report in
-
 
 
 ## **Project 6 with detailed report: Representation Learning and Regression Models**
 
-
+code in: [ECE657A-projects/A2](./ECE657A-projects/A2)
+report: [a2-submitted.pdf](./ECE657A-projects/A2/a2-submitted.pdf)
 
 **Description**: Applied dimensionality reduction techniques (t-SNE, PCA, Isomap) and regression algorithms (KNN Regressor, Random Forest Regressor, Gradient Boosting Regressor) on Forest Fires, Wine Quality, and Abalone datasets, with comparative evaluation of RMSE performance and visualization of feature representations.
 
@@ -128,7 +179,8 @@ report in
 
 
 ## **Project 7 with detailed report: Clustering and Classification with Deep Learning on “FashionMNIST with a Twist!”**
-
+code in: [ECE657A-projects/A3](./ECE657A-projects/A3)
+report: [a3-submitted.pdf](./ECE657A-projects/A3/a3-submitted.pdf)
 
 
 **Description**: Built and evaluated multiple deep learning models on the **Fashion MNIST dataset**, exploring optimization strategies, deeper architectures, convolutional layers, dropout, residual connections, and data augmentation. The best model achieved **98.63% test accuracy**, with additional analysis on feature representations through clustering and visualization.
@@ -172,6 +224,7 @@ report in
 
 
 ## Project 8: Variational Autoencoder (VAE) for Anime Face Generation
+code in: [VAE.ipynb](./VAE.ipynb)
 
 This project implements a **Variational Autoencoder (VAE)** using **PyTorch**.  The VAE is trained on image data to learn compressed latent representations and generate new samples, demonstrating the power of **deep generative models**.
 
@@ -199,6 +252,7 @@ Example Results
 
 
 ## Project 9: Multi-Armed Bandit with Q-Learning
+code in: [bandit_Q.ipynb](./bandit_Q.ipynb)
 
 **Description**: This project explores **Reinforcement Learning (RL)** through the **multi-armed bandit problem**,  implemented with **Q-learning** in Python.  The goal is to balance **exploration vs exploitation** while maximizing cumulative reward.
 
@@ -230,12 +284,13 @@ Example Results
 
 
 ## Project 10: Movie Rating Prediction
-
+code in: [MovieRatingPrediction](./MovieRatingPrediction)
 
 
 
 
 ## Project 11: Stock Prediction with RNN
+code in: [StockPrediction](./StockPrediction)
 
 This project applies **Recurrent Neural Networks (RNNs)** to forecast stock prices from historical time-series data.  The model captures sequential dependencies in daily price movements to predict future stock trends. Build and train an RNN-based model to predict future stock prices using historical data (open, high, low, close, volume).
 
@@ -276,6 +331,7 @@ This project applies **Recurrent Neural Networks (RNNs)** to forecast stock pric
 
 
 ## Project 12: Graph Convolutional Network (GCN) on Dolphins Social Network 🐬
+code in: [NewZealandDolphinsEmbedding-GCN](./NewZealandDolphinsEmbedding-GCN)
 
 This project applies a **Graph Convolutional Network (GCN)** to the famous **Dolphins social network dataset**,  which captures associations between 62 dolphins in Doubtful Sound, New Zealand.
 
@@ -314,6 +370,7 @@ This project applies a **Graph Convolutional Network (GCN)** to the famous **Dol
 
 
 # Kaggle Machine Learning Competition – ECE657: Stroke Risk Prediction
+code and report in: [submit-ece657-kaggle.ipynb](./submit-ece657-kaggle.ipynb)
 
 This project contains my submission for the **ECE657 Kaggle competition**. The goal was to build and optimize machine learning models for predictive accuracy on the provided dataset.
 
