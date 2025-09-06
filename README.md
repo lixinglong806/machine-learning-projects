@@ -32,11 +32,16 @@ after finetuning:
 
 
 # Project 2: Instruction-Tuned LLM for Text Generation
+Code in: [llm/llms-from-scratch/](./llm/llms-from-scratch/)
+
+Run with:  
+```bash
+python llm/llms-from-scratch/finetuning-to-follow-Instructions.py
+```
 
 This project explores **instruction tuning** for large language models (LLMs).  
 We start with a pretrained GPT-2 model and fine-tune it on a dataset of human-written instructions (1.1k) and responses to align the model with task-following behavior.
 
----
 
 ## Dataset
 - **Source**: [instruction-data.json](https://github.com/lixinglong806/machine-learning-projects/blob/main/llm/llms-from-scratch/instruction-data.json)  
