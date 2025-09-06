@@ -16,14 +16,6 @@ Build LLMs model structure from scratch and then fine-tune a pretrained **GPT-2*
 - Output: Classify text as **spam** or **ham**  
 
 
-
-## Example
-```python
-text = "You are a winner! Claim your $1000 cash reward now."
-print(classify_review(text, model, tokenizer, device,
-                      max_length=train_dataset.max_length))
-# -> "spam"
-
 ## Result
 before finetuning:
 <img width="221" height="54" alt="image" src="https://github.com/user-attachments/assets/76f9d8d8-cca0-4e5a-99ab-30a1eea1ceff" />
