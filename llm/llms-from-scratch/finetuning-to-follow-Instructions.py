@@ -38,8 +38,8 @@ def download_and_load_file(file_path, url):
 
 file_path = "instruction-data.json"
 url = (
-    "https://raw.githubusercontent.com/rasbt/LLMs-from-scratch"
-    "/main/ch07/01_main-chapter-code/instruction-data.json"
+    "https://github.com/lixinglong806/machine-learning-projects"
+    "/blob/main/llm/llms-from-scratch/instruction-data.json"
 )
 
 data = download_and_load_file(file_path, url)
@@ -439,32 +439,13 @@ def query_model(
 def generate_model_scores(json_data, json_key, model="llama3"):
     scores = []
     for entry in tqdm(json_data, desc="Scoring entries"):
-        prompt = f"""
-            You are a fair judge assistant tasked with providing clear, objective feedback
-            based on specific criteria, ensuring each assessment reflects the absolute standards set for performance.
-            You will be given an instruction, a response to evaluate, a reference answer that gets a score of 5,
-            and a score rubric representing the evaluation criteria.
-            Write a detailed feedback that assess the quality of the response strictly based on the given score rubric,
-            not evaluating in general.
-            Please do not generate any other opening, closing, and explanations.
-            
-            Here is the rubric you should use to build your answer:
-            1: The response fails to address the instructions, providing irrelevant, incorrect,
-               or excessively verbose information that detracts from the user's request.
-            2: The response partially addresses the instructions but includes significant inaccuracies,
-               irrelevant details, or excessive elaboration that detracts from the main task.
-            3: The response follows the instructions with some minor inaccuracies or omissions.
-               It is generally relevant and clear, but may include some unnecessary details or could be more concise.
-            4: The response adheres to the instructions, offering clear, accurate, and relevant information
-               in a concise manner, with only occasional, minor instances of excessive detail or slight lack of clarity.
-            5: The response fully adheres to the instructions, providing a clear, accurate, and relevant answer
-               in a concise and efficient manner. It addresses all aspects of the request without unnecessary details or elaboration.
-            
-            Given the input `{format_input(entry)}`
-            and correct output `{entry['output']}`,
-            score the model response `{entry[json_key]}`
-            Respond with the integer number only.
-            """
+        prompt = (
+            f"Given the input `{format_input(entry)}` "
+            f"and correct output `{entry['output']}`, "
+            f"score the model response `{entry[json_key]}`"
+            f" on a scale from 0 to 100, where 100 is the best score. "
+            f"NOTICE: ONLY Respond with the integer number."
+        )
         score = query_model(prompt, model)
         try:
             scores.append(int(score))
