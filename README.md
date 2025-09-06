@@ -6,7 +6,15 @@ Collection of my machine learning projects and algorithms, covering both classic
 **Highlights**: Projects span **LLMs, recommendation systems, natural language processing (NLP), computer vision (CV), reinforcement learning (RL), and graph neural networks (GNNs)**, demonstrating a broad skill set across applied machine learning domains.
 
 ## Project 1: Building LLM SMS Spam Classifier from scratch
+Code in: [llm/llms-from-scratch/](./llm/llms-from-scratch/)
+
+Run with:  
+```bash
+python llm/llms-from-scratch/funingtuning-for-text-classification.py
+
+
 Build LLMs model structure from scratch and then fine-tune a pretrained **GPT-2** model with a classification head to detect **spam SMS messages** using the UCI SMS Spam Collection dataset.
+
 
 ## Highlights
 - Dataset: UCI **SMS Spam Collection** (~5.5k messages)  
