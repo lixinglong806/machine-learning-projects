@@ -31,7 +31,7 @@ after finetuning:
 <img width="254" height="61" alt="image" src="https://github.com/user-attachments/assets/b3526eb2-89ef-4b5d-bb23-86e7f141b2ef" />
 
 
-# Project 2: Instruction-Tuned LLM for Text Generation
+## Project 2: Instruction-Tuned LLM for Text Generation
 Code in: [llm/llms-from-scratch/](./llm/llms-from-scratch/)
 
 Run with:  
