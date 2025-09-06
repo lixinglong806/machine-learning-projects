@@ -1,0 +1,12 @@
+# 忽略 gptz 文件夹
+llm/llms-from-scratch/gpt2/
+
+# 忽略 sms_spam_collection 文件夹及压缩包
+llm/llms-from-scratch/sms_spam_collection/
+llm/llms-from-scratch/sms_spam_collection.zip
+
+# 忽略各种数据文件
+llm/llms-from-scratch/test.csv
+llm/llms-from-scratch/train.csv
+llm/llms-from-scratch/validation.csv
+llm/llms-from-scratch/the-verdict.txt
