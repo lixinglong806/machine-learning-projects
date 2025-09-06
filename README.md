@@ -8,16 +8,14 @@ Collection of my machine learning projects and algorithms, covering both classic
 ## Project 1: Building LLM SMS Spam Classifier from scratch
 Build LLMs model structure from scratch and then fine-tune a pretrained **GPT-2** model with a classification head to detect **spam SMS messages** using the UCI SMS Spam Collection dataset.
 
-## 🔹 Highlights
+## Highlights
 - Dataset: UCI **SMS Spam Collection** (~5.5k messages)  
 - Model: **GPT-2 (small)** frozen + trainable classification head  
 - Tokenization: GPT-2 BPE (`tiktoken`)  
 - Training: PyTorch `AdamW`, accuracy/loss tracking  
 - Output: Classify text as **spam** or **ham**  
 
-## 🚀 Quickstart
-```bash
-python llm/llms-from-scratch/funingtuning-for-text-classification.py
+
 
 ## Example
 ```python
