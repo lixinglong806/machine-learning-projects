@@ -52,7 +52,8 @@ Example:
   "instruction": "Translate 'good morning' to French.",
   "input": "",
   "output": "Bonjour"
-}```
+}
+```
 
 ## Model
 - **Base model**: GPT-2 (124M / 355M / 774M / 1558M)  
@@ -82,7 +83,7 @@ Example:
 
 
 
-## Project 1: Building an Industrial-Scale E-commerce Recommendation System from Scratch
+## Project 3: Building an Industrial-Scale E-commerce Recommendation System from Scratch
 code in: [e-commerce-rec-sys-from-scratch/code](./e-commerce-rec-sys-from-scratch/code)
 
 **Introduction**  
@@ -108,7 +109,7 @@ Established a scalable recommendation foundation that evolved from cold-start st
 
 
 
-## Project 2: Personalized Recommendation for Advertising
+## Project 4: Personalized Recommendation for Advertising
 code in: [Personalized-Ad-RecSys](./Personalized-Ad-RecSys)
 
 **Introduction**  
@@ -142,7 +143,7 @@ The system integrates **offline recall, CTR prediction, and real-time recommenda
 - Demonstrated improvement in ad CTR prediction and personalized targeting compared to non-personalized baselines.
 
 
-## Project 3: Language Models for Music Generation 🎶
+## Project 5: Language Models for Music Generation 🎶
 code in: [RNN_Music_Generation.ipynb](./RNN_Music_Generation.ipynb)
 
 
@@ -174,7 +175,7 @@ Future work could extend this to LSTM/GRU architectures, or generate MIDI for ri
 
 
 
-## Project 4: Image Classification on CIFAR-10 with a Convolutional Neural Network (CNN) from Scratch
+## Project 6: Image Classification on CIFAR-10 with a Convolutional Neural Network (CNN) from Scratch
 code in: [CNN-scratch-pytorch.ipynb](./CNN-scratch-pytorch.ipynb)
 
 **Description**:This project implements a **Convolutional Neural Network (CNN)** in **PyTorch**, trained and tested on  image classification datasets. The goal was to build a CNN from the ground up and understand  how each layer contributes to feature extraction and classification.
@@ -209,7 +210,7 @@ Example Results
 
 
 
-## **Project 5 with detailed report: Data Pre-processing and Non-Parametric Classification Algorithms**
+## **Project 7 with detailed report: Data Pre-processing and Non-Parametric Classification Algorithms**
 code in: [ECE657A-projects/A1](./ECE657A-projects/A1)
 report: [a1-submitted.pdf](./ECE657A-projects/A1/a1-submitted.pdf)
 
@@ -230,7 +231,7 @@ report: [a1-submitted.pdf](./ECE657A-projects/A1/a1-submitted.pdf)
 
 
 
-## **Project 6 with detailed report: Representation Learning and Regression Models**
+## **Project 8 with detailed report: Representation Learning and Regression Models**
 
 code in: [ECE657A-projects/A2](./ECE657A-projects/A2)
 report: [a2-submitted.pdf](./ECE657A-projects/A2/a2-submitted.pdf)
@@ -254,7 +255,7 @@ report: [a2-submitted.pdf](./ECE657A-projects/A2/a2-submitted.pdf)
 
 
 
-## **Project 7 with detailed report: Clustering and Classification with Deep Learning on “FashionMNIST with a Twist!”**
+## **Project 9 with detailed report: Clustering and Classification with Deep Learning on “FashionMNIST with a Twist!”**
 code in: [ECE657A-projects/A3](./ECE657A-projects/A3)
 report: [a3-submitted.pdf](./ECE657A-projects/A3/a3-submitted.pdf)
 
@@ -299,7 +300,7 @@ report: [a3-submitted.pdf](./ECE657A-projects/A3/a3-submitted.pdf)
 
 
 
-## Project 8: Variational Autoencoder (VAE) for Anime Face Generation
+## Project 10: Variational Autoencoder (VAE) for Anime Face Generation
 code in: [VAE.ipynb](./VAE.ipynb)
 
 This project implements a **Variational Autoencoder (VAE)** using **PyTorch**.  The VAE is trained on image data to learn compressed latent representations and generate new samples, demonstrating the power of **deep generative models**.
@@ -327,7 +328,7 @@ Example Results
 
 
 
-## Project 9: Multi-Armed Bandit with Q-Learning
+## Project 11: Multi-Armed Bandit with Q-Learning
 code in: [bandit_Q.ipynb](./bandit_Q.ipynb)
 
 **Description**: This project explores **Reinforcement Learning (RL)** through the **multi-armed bandit problem**,  implemented with **Q-learning** in Python.  The goal is to balance **exploration vs exploitation** while maximizing cumulative reward.
@@ -359,13 +360,13 @@ Example Results
 
 
 
-## Project 10: Movie Rating Prediction
+## Project 12: Movie Rating Prediction
 code in: [MovieRatingPrediction](./MovieRatingPrediction)
 
 
 
 
-## Project 11: Stock Prediction with RNN
+## Project 13: Stock Prediction with RNN
 code in: [StockPrediction](./StockPrediction)
 
 This project applies **Recurrent Neural Networks (RNNs)** to forecast stock prices from historical time-series data.  The model captures sequential dependencies in daily price movements to predict future stock trends. Build and train an RNN-based model to predict future stock prices using historical data (open, high, low, close, volume).
@@ -406,7 +407,7 @@ This project applies **Recurrent Neural Networks (RNNs)** to forecast stock pric
 
 
 
-## Project 12: Graph Convolutional Network (GCN) on Dolphins Social Network 🐬
+## Project 14: Graph Convolutional Network (GCN) on Dolphins Social Network 🐬
 code in: [NewZealandDolphinsEmbedding-GCN](./NewZealandDolphinsEmbedding-GCN)
 
 This project applies a **Graph Convolutional Network (GCN)** to the famous **Dolphins social network dataset**,  which captures associations between 62 dolphins in Doubtful Sound, New Zealand.
