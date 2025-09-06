@@ -1,6 +1,6 @@
 
 ## Project 1: Building LLM SMS Spam Classifier from scratch
-Code in: [llm/llms-from-scratch/](./llm/llms-from-scratch/)
+Code in: [llms-from-scratch/](./llms-from-scratch/)
 
 Run with:  
 ```bash
