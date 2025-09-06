@@ -65,8 +65,6 @@ Example:
   - Epochs: 2–3  
   - Batch size: 8  
 
----
-
 ## Tech Stack
 - **Framework**: PyTorch  
 - **Data handling**: `torch.utils.data.Dataset`, `DataLoader`  
