@@ -26,7 +26,7 @@ after finetuning:
 
 
 ## Project 2: Instruction-Tuned LLM for Text Generation
-Code in: [llm/llms-from-scratch/](./llm/llms-from-scratch/)
+Code in: [llms-from-scratch/](./llms-from-scratch/)
 
 Run with:  
 ```bash
