@@ -11,7 +11,7 @@ Code in: [llm/llms-from-scratch/](./llm/llms-from-scratch/)
 Run with:  
 ```bash
 python llm/llms-from-scratch/funingtuning-for-text-classification.py
-
+```
 
 Build LLMs model structure from scratch and then fine-tune a pretrained **GPT-2** model with a classification head to detect **spam SMS messages** using the UCI SMS Spam Collection dataset.
 
