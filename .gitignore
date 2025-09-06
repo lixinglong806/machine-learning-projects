@@ -4,6 +4,7 @@ llm/llms-from-scratch/gpt2/
 # 忽略 sms_spam_collection 文件夹及压缩包
 llm/llms-from-scratch/sms_spam_collection/
 llm/llms-from-scratch/sms_spam_collection.zip
+llm/llms-from-scratch/__pycache__/
 
 # 忽略各种数据文件
 llm/llms-from-scratch/test.csv
