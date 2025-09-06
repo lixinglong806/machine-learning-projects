@@ -3,7 +3,35 @@ Collection of my machine learning projects and algorithms, covering both classic
 
 ⚠️ Note: Projects from my full-time professional work experience are **not included here** due to confidentiality.  
 
-**Highlights**: Projects span **recommendation systems, natural language processing (NLP), computer vision (CV), reinforcement learning (RL), and graph neural networks (GNNs)**, demonstrating a broad skill set across applied machine learning domains.
+**Highlights**: Projects span **LLMs, recommendation systems, natural language processing (NLP), computer vision (CV), reinforcement learning (RL), and graph neural networks (GNNs)**, demonstrating a broad skill set across applied machine learning domains.
+
+## Project 1: Building LLM SMS Spam Classifier from scratch
+Build LLMs model structure from scratch and then fine-tune a pretrained **GPT-2** model with a classification head to detect **spam SMS messages** using the UCI SMS Spam Collection dataset.
+
+## 🔹 Highlights
+- Dataset: UCI **SMS Spam Collection** (~5.5k messages)  
+- Model: **GPT-2 (small)** frozen + trainable classification head  
+- Tokenization: GPT-2 BPE (`tiktoken`)  
+- Training: PyTorch `AdamW`, accuracy/loss tracking  
+- Output: Classify text as **spam** or **ham**  
+
+## 🚀 Quickstart
+```bash
+python llm/llms-from-scratch/funingtuning-for-text-classification.py
+
+## Example
+```python
+text = "You are a winner! Claim your $1000 cash reward now."
+print(classify_review(text, model, tokenizer, device,
+                      max_length=train_dataset.max_length))
+# -> "spam"
+
+## Result
+before finetuning:
+<img width="221" height="54" alt="image" src="https://github.com/user-attachments/assets/76f9d8d8-cca0-4e5a-99ab-30a1eea1ceff" />
+after finetuning:
+<img width="254" height="61" alt="image" src="https://github.com/user-attachments/assets/b3526eb2-89ef-4b5d-bb23-86e7f141b2ef" />
+
 
 
 ## Project 1: Building an Industrial-Scale E-commerce Recommendation System from Scratch
